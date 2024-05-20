@@ -30,14 +30,24 @@ function App() {
       }
     })
   }
-  console.log(projectState.projects)
+
+
+  const handleClose = () => {
+    setProjectState(prevState => {
+      return {
+        ...prevState,
+        selectedProjectId: undefined
+      }
+    })
+  }
+
     return (
       <main className="h-screen my-8 gap-8 flex">
         <ProjectSideBar onStartNewProject={handleStartNewProject} projects={projectState.projects} />
         {/* <NewProject /> */}
         {projectState.selectedProjectId === undefined ? 
         <NoProjectSelected onStartNewProject={handleStartNewProject} /> : 
-        <NewProject onSaveProject={handleSaveProject} />
+        <NewProject onSaveProject={handleSaveProject} onCloseDialog={handleClose}/>
         }
         
       </main>
