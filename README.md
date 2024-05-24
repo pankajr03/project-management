@@ -48,7 +48,7 @@
 
 <h2 id="usage">Usage</h2>
 <ol>
-    <li>Open your browser and navigate to <code>http://localhost:3000</code>.</li>
+    <li>Open your browser and navigate to <code>http://localhost:5173</code>.</li>
     <li>Use the interface to manage your projects and tasks:
         <ul>
             <li>To add a new project, use the input field and "Add Project" button.</li>
@@ -83,4 +83,4 @@
 
 <hr>
 
-<p><strong>Author</strong>: <a href="https://github.com/your-username">Your Name</a></p>
+<p><strong>Author</strong>: <a href="https://github.com/pankajr03">Pankaj Kumar</a></p>
